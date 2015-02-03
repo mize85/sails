@@ -26,7 +26,7 @@ module.exports = function (environment) {
 
     // Sailsjs JSON Web Token (JWT) Configuration
     ENV['simple-auth-token'] = {
-        serverTokenEndpoint: 'http://localhost:1338/auth/login',
+        serverTokenEndpoint: 'http://localhost:1338/auths/login',
         authorizationPrefix: 'JWT ',
         tokenPropertyName: 'token',
         authorizationHeaderName: 'X-Auth',
