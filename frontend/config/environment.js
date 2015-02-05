@@ -33,6 +33,15 @@ module.exports = function (environment) {
         identificationField: 'email'
     };
 
+    ENV['torii'] = {
+      providers: {
+        'google-oauth2': {
+          apiKey: '532461601086-qb1f03gmm90m009l9vefu0lm1og1ngbe.apps.googleusercontent.com',
+          scope: 'profile',
+          redirectUri: 'http://localhost:4200'
+        }
+      }
+    };
 
     if (environment === 'development') {
         // ENV.APP.LOG_RESOLVER = true;

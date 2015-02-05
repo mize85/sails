@@ -27,6 +27,12 @@
 		</div>
 	</div>
 
+    <div class="row">
+        <div class="col-sm-12">
+            <button {{action 'socialLogin' 'service:google-token'}}>Google Login</button>
+        </div>
+    </div>
+
 {{#if errorMessage}}
     <div class="alert alert-danger">
         <p>

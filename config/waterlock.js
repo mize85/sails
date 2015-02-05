@@ -45,6 +45,11 @@ module.exports.waterlock = {
         }
       },
       createOnNotFound: true
+    },
+   {
+      name: 'waterlock-google-auth',
+      clientId: '532461601086-qb1f03gmm90m009l9vefu0lm1og1ngbe.apps.googleusercontent.com',
+      clientSecret: 'FG9d8j7geuOchRlGco5UIZHh'
     }
   ],
 
