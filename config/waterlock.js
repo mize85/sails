@@ -61,7 +61,7 @@ module.exports.waterlock = {
   jsonWebTokens:{
 
     // CHANGE THIS SECRET
-    secret: 'this is my secret',
+    secret: 'this is my secret - i changed it...',
     expiry:{
       unit: 'days',
       length: '7'

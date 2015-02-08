@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
 
     actions: {
 
-        add: function(){
+        addPost: function(){
             var self = this;
             var title = this.get('title');
             var text = this.get('text');
@@ -29,6 +29,14 @@ export default Ember.Controller.extend({
                 Ember.Logger.debug(e);
                 model.deleteRecord();
                 self._clearBlogAttributes();
+            });
+        },
+        deletePost: function(model){
+            model.deleteRecord();
+            model.save().then(function(){
+                Ember.Logger.debug("Post deleted.");
+            }, function(e){
+                Ember.Logger.debug(e);
             });
         }
     }
